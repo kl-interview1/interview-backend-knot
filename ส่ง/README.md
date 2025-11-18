@@ -20,7 +20,6 @@ psql postgresql://interview_usr_5c6bc2:IntV_2025_8e0cfbf4@10.0.100.153:15432/int
 Server จะรันที่ http://localhost:3000
 
 ## 🔹 API Endpoints
-## 🔹 API Endpoints
 
 ### Users
 | Method | Endpoint        | Description       |
@@ -46,5 +45,6 @@ Server จะรันที่ http://localhost:3000
 | GET    | /enrollments       | ดึงรายการการลงทะเบียน|
 | POST   | /enrollments       | ลงทะเบียนผู้ใช้ในคอร์ส|
 | DELETE | /enrollments/:id   | ลบการลงทะเบียน|
+
 
 ## รูปตัวอย่างการใช้งาน API อยู่่ใน folder postman
