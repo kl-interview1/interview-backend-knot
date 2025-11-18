@@ -47,4 +47,5 @@ Server จะรันที่ http://localhost:3000
 | DELETE | /enrollments/:id   | ลบการลงทะเบียน|
 
 
-## รูปตัวอย่างการใช้งาน API อยู่่ใน folder postman
+## รูปตัวอย่างการใช้งาน API อยู่่ใน folder photo ใน rar
+
