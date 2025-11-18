@@ -25,27 +25,28 @@ Server จะรันที่ http://localhost:3000
 | Method | Endpoint        | Description       |
 |--------|----------------|------------------------------|
 | GET    | /users          | ดึงรายการผู้ใช้งาน|
-| GET    | /users/:id      | ดึงรายละเอียดผู้ใช้|
-| POST   | /users          | สร้างผู้ใช้|
-| PUT    | /users/:id      | แก้ไขผู้ใช้|
-| DELETE | /users/:id      | ลบผู้ใช้|
+| GET    | /user/:id      | ดึงรายละเอียดผู้ใช้|
+| POST   | /user         | สร้างผู้ใช้|
+| PUT    | /user/:id      | แก้ไขผู้ใช้|
+| DELETE | /user/:id      | ลบผู้ใช้|
 
 ### Courses
 | Method | Endpoint          | Description  |
 |--------|-----------------|------------------------------------|
 | GET    | /courses         | ดึงรายการคอร์ส|
-| GET    | /courses/:id     | ดึงรายละเอียดคอร์ส|
-| POST   | /courses         | สร้างคอร์ส (Admin Only)|
-| PUT    | /courses/:id     | แก้ไขคอร์ส (Admin Only)|
-| DELETE | /courses/:id     | ลบคอร์ส (Admin Only)|
+| GET    | /course/:id     | ดึงรายละเอียดคอร์ส|
+| POST   | /courses        | สร้างคอร์ส (Admin Only)|
+| PUT    | /course/:id     | แก้ไขคอร์ส (Admin Only)|
+| DELETE | /course/:id     | ลบคอร์ส (Admin Only)|
 
 ### Enrollments
 | Method | Endpoint | Description|
 |--------|-------------------|---------------------------------------------|
 | GET    | /enrollments       | ดึงรายการการลงทะเบียน|
-| POST   | /enrollments       | ลงทะเบียนผู้ใช้ในคอร์ส|
-| DELETE | /enrollments/:id   | ลบการลงทะเบียน|
+| POST   | /enrollment       | ลงทะเบียนผู้ใช้ในคอร์ส|
+| DELETE | /enrollment/:id   | ลบการลงทะเบียน|
 
 
 ## รูปตัวอย่างการใช้งาน API อยู่่ใน folder photo ใน rar
+
 
