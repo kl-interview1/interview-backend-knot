@@ -14,6 +14,11 @@
 ## 🧰 สิ่งที่เตรียมให้
 
 - ฐานข้อมูล **PostgreSQL**
+  - **Host:** dev-interview-db.klickerlab.com
+  - **Database name:** interview_db_20251118_1459
+  - **Username:** interview_usr_9b5be5
+  - **Password:** IntV_2025_6935abc3
+  - **Connection string:** postgresql://interview_usr_9b5be5:IntV_2025_6935abc3@10.0.100.153:15432/interview_db_20251118_1459
 - ผู้เข้าสอบสามารถเลือกใช้เทคโนโลยีได้อิสระ:
   - **Language:** Node.js (Express / NestJS / Fastify)
   - **Database:** PostgreSQL
