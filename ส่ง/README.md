@@ -46,6 +46,102 @@ Server จะรันที่ http://localhost:3000
 | POST   | /enrollment       | ลงทะเบียนผู้ใช้ในคอร์ส|
 | DELETE | /enrollment/:id   | ลบการลงทะเบียน|
 
+## 🔹 Parameter
+
+### Users
+GET /users
+Parameters:
+- page (number, optional) – หน้าเริ่มต้น (default = 1)
+- limit (number, optional) – จำนวนรายการต่อหน้า (default = 10)
+- keyword (string, optional) – ค้นหาจากชื่อหรืออีเมล
+
+GET /user/:id
+Path Parameters:
+- id (number, required) – รหัสผู้ใช้
+
+POST /user
+Body Parameters:
+- email (string, required) – อีเมล
+- password (string, required) – รหัสผ่าน
+- role (string, required) – admin | trainer | student
+- first_name (string, required) – ชื่อ
+- last_name (string, required) – นามสกุล
+- phone (string, optional) – เบอร์โทร
+- address (string, optional) – ที่อยู่
+- created_by (string, required) – ผู้ทำรายการ
+
+PUT /user/:id
+Path Parameters:
+- id (number, required) – รหัสผู้ใช้
+Body Parameters (ส่งเฉพาะที่ต้องการแก้ได้):
+- email (string, optional)
+- password (string, optional)
+- role (string, optional)
+- first_name (string, optional)
+- last_name (string, optional)
+- phone (string, optional)
+- address (string, optional)
+- updated_by (string, required) – ผู้แก้ไขข้อมูล
+
+DELETE /user/:id
+Path Parameters:
+- id (number, required) – รหัสผู้ใช้
+
+---
+
+### Courses
+GET /courses
+Parameters:
+- page (number, optional) – default = 1
+- limit (number, optional) – default = 10
+- title (string, optional) – ค้นหาจากชื่อคอร์ส
+- trainer_id (number, optional) – ดึงเฉพาะคอร์สของ trainer
+
+GET /course/:id
+Path Parameters:
+- id (number, required) – รหัสคอร์ส
+
+POST /courses (Admin Only)
+Body Parameters:
+- title (string, required)
+- description (string, optional)
+- trainer_id (number, required)
+- created_by (string, required)
+
+PUT /course/:id (Admin Only)
+Path Parameters:
+- id (number, required)
+Body Parameters:
+- title (string, optional)
+- description (string, optional)
+- trainer_id (number, optional)
+- updated_by (string, required)
+
+DELETE /course/:id (Admin Only)
+Path Parameters:
+- id (number, required)
+
+---
+
+### Enrollments
+
+GET /enrollments
+Parameters:
+- page (number, optional) – default = 1
+- limit (number, optional) – default = 10
+- user_id (number, optional) – ดึงเฉพาะนักเรียนคนหนึ่ง
+- course_id (number, optional) – ดึงเฉพาะคอร์ส
+- trainer_id (number, optional) – ดึงเฉพาะคอร์สของผู้สอน
+
+POST /enrollment
+Body Parameters:
+- user_id (number, required) – นักเรียน
+- course_id (number, required) – คอร์สที่ต้องการลงทะเบียน
+- created_by (string, required) – ผู้ทำรายการ
+
+DELETE /enrollment/:id
+Path Parameters:
+- id (number, required) – enrollment_id
 
 ## รูปตัวอย่างการใช้งาน API อยู่่ใน folder photo ใน rar
 ## 🔹 Feedback
@@ -53,6 +149,7 @@ Server จะรันที่ http://localhost:3000
 - ให้พัฒนา Service สำหรับระบบจัดการหลักสูตรอบรม โดยประกอบด้วย 4 table อาจทำให้นึกว่ามี table อยู่แล้ว
 - การส่งงานยังไม่เคลียร์เท่าไหรว่าส่งยังไง
 - เวลาการทำใช้เวลาประมาณ 5-6 ชม 
+
 
 
 
