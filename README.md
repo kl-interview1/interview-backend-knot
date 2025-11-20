@@ -18,7 +18,7 @@
   - **Database name:** interview_db_20251118_1541
   - **Username:** interview_usr_5c6bc2
   - **Password:** IntV_2025_8e0cfbf4
-  - **Connection string:** postgresql://interview_usr_5c6bc2:IntV_2025_8e0cfbf4@10.0.100.153:15432/interview_db_20251118_1541
+  - **Connection string:** postgresql://interview_usr_5c6bc2:IntV_2025_8e0cfbf4@dev-interview-db.klickerlab.com:15432/interview_db_20251118_1541
 - ผู้เข้าสอบสามารถเลือกใช้เทคโนโลยีได้อิสระ:
   - **Language:** Node.js (Express / NestJS / Fastify)
   - **Database:** PostgreSQL
